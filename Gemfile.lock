@@ -110,6 +110,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3.1)
+    rack-cors (1.1.1)
+      rack (>= 2.0.0)
     rack-mini-profiler (2.3.4)
       rack (>= 1.2.0)
     rack-proxy (0.7.2)
@@ -174,6 +176,8 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.2)
+    tailwindcss-rails (2.0.8-x86_64-darwin)
+      railties (>= 6.0.0)
     thor (1.2.1)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -181,6 +185,11 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    view_component (2.57.0)
+      activesupport (>= 5.0.0, < 8.0)
+      method_source (~> 1.0)
+    view_component_storybook (0.11.1)
+      view_component (>= 2.36)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -213,14 +222,18 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (~> 3.3)
   puma (~> 5.0)
+  rack-cors
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.5)
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
   spring
   sqlite3 (~> 1.4)
+  tailwindcss-rails (~> 2.0)
   turbolinks (~> 5)
   tzinfo-data
+  view_component
+  view_component_storybook
   web-console (>= 4.1.0)
   webdrivers
   webpacker (~> 5.0)

@@ -30,6 +30,13 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+  config.action_controller.asset_host =  'http://localhost:3000'
+  config.middleware.insert_before 0, Rack::Cors do
+    allow do
+      origins '*'
+        resource '/rails/stories/*', :headers => :any, :methods => [:get]
+    end
+  end
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
 
