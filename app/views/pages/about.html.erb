@@ -2,7 +2,7 @@
 <p>This page will demo our ViewComponents
 
 
-<span class="px-4 py-2  text-base rounded-full text-white  bg-indigo-500 ">
+<%# <span class="px-4 py-2  text-base rounded-full text-white  bg-indigo-500 ">
     Hello
     <button class="bg-transparent hover">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="ml-4" viewBox="0 0 1792 1792">
@@ -10,10 +10,12 @@
             </path>
         </svg>
     </button>
-</span>
+</span> %>
+
+<button class="text-center text-indigo-400 font-bold rounded py-2 w-2/12 focus:outline-none bg-gray-900 border-2 border-indigo-400">Button</button>
 
 
-
+<%= render(ButtonComponent.new(title: "NEW")) %>
 <%= render(BadgeComponent.new(title: "NEW")) %>
-<%= render(NavbarComponent.new(title: "NEW")) %>
-<%= render(AvatarComponent.new(src: "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80")) %>
+<%# <%= render(NavbarComponent.new(title: "NEW")) %>
+<%# <%= render(AvatarComponent.new(src: "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80")) %>
